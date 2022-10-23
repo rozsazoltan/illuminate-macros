@@ -21,10 +21,12 @@
   },
   "autoload": {
     "psr-4": {
+      "Datarose\\LaravelMacros\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
+      "Datarose\\LaravelMacros\\Test\\": "tests/"
     }
   },
   "scripts": {
@@ -37,6 +39,7 @@
   "extra": {
     "laravel": {
       "providers": [
+        "Datarose\\LaravelMacros\\LaravelMacroServiceProvider"
       ]
     }
   },

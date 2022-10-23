@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18ba0e4b06e3d44b39d53346ab151f86",
+    "content-hash": "04c2f9468473c06e7c16ab8257c84241",
     "packages": [],
     "packages-dev": [
         {
@@ -175,36 +175,37 @@
         },
         {
             "name": "amphp/parallel",
-            "version": "v0.2.5",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/parallel.git",
-                "reference": "732694688461936bec02c0ccf020dfee10c4f7ee"
+                "reference": "fbc128383c1ffb3823866f71b88d8c4722a25ce9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/parallel/zipball/732694688461936bec02c0ccf020dfee10c4f7ee",
-                "reference": "732694688461936bec02c0ccf020dfee10c4f7ee",
+                "url": "https://api.github.com/repos/amphp/parallel/zipball/fbc128383c1ffb3823866f71b88d8c4722a25ce9",
+                "reference": "fbc128383c1ffb3823866f71b88d8c4722a25ce9",
                 "shasum": ""
             },
             "require": {
                 "amphp/amp": "^2",
-                "amphp/byte-stream": "^1.2",
+                "amphp/byte-stream": "^1.6.1",
                 "amphp/parser": "^1",
-                "amphp/process": "^0.2 || ^0.3",
-                "amphp/sync": "^1.0.1"
+                "amphp/process": "^1",
+                "amphp/serialization": "^1",
+                "amphp/sync": "^1.0.1",
+                "php": ">=7.1"
             },
             "require-dev": {
-                "amphp/phpunit-util": "^1",
-                "friendsofphp/php-cs-fixer": "^2.3",
-                "phpunit/phpunit": "^6"
-            },
-            "suggest": {
-                "ext-pthreads": "Required for thread contexts"
+                "amphp/php-cs-fixer-config": "dev-master",
+                "amphp/phpunit-util": "^1.1",
+                "phpunit/phpunit": "^8 || ^7"
             },
             "type": "library",
             "autoload": {
                 "files": [
+                    "lib/Context/functions.php",
+                    "lib/Sync/functions.php",
                     "lib/Worker/functions.php"
                 ],
                 "psr-4": {
@@ -217,12 +218,12 @@
             ],
             "authors": [
                 {
-                    "name": "Stephen Coakley",
-                    "email": "me@stephencoakley.com"
-                },
-                {
                     "name": "Aaron Piotrowski",
                     "email": "aaron@trowski.com"
+                },
+                {
+                    "name": "Stephen Coakley",
+                    "email": "me@stephencoakley.com"
                 }
             ],
             "description": "Parallel processing component for Amp.",
@@ -236,9 +237,15 @@
             ],
             "support": {
                 "issues": "https://github.com/amphp/parallel/issues",
-                "source": "https://github.com/amphp/parallel/tree/phar-copy"
+                "source": "https://github.com/amphp/parallel/tree/v1.4.1"
             },
-            "time": "2018-03-21T14:37:51+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/amphp",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-10-25T19:16:02+00:00"
         },
         {
             "name": "amphp/parallel-functions",
@@ -348,32 +355,32 @@
         },
         {
             "name": "amphp/process",
-            "version": "v0.3.3",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/process.git",
-                "reference": "b795d20a7f6d5a0637128a02be613f520f1705fc"
+                "reference": "76e9495fd6818b43a20167cb11d8a67f7744ee0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/process/zipball/b795d20a7f6d5a0637128a02be613f520f1705fc",
-                "reference": "b795d20a7f6d5a0637128a02be613f520f1705fc",
+                "url": "https://api.github.com/repos/amphp/process/zipball/76e9495fd6818b43a20167cb11d8a67f7744ee0f",
+                "reference": "76e9495fd6818b43a20167cb11d8a67f7744ee0f",
                 "shasum": ""
             },
             "require": {
                 "amphp/amp": "^2",
-                "amphp/byte-stream": "^1",
+                "amphp/byte-stream": "^1.4",
                 "php": ">=7"
             },
             "require-dev": {
+                "amphp/php-cs-fixer-config": "dev-master",
                 "amphp/phpunit-util": "^1",
-                "friendsofphp/php-cs-fixer": "^2.3",
                 "phpunit/phpunit": "^6"
             },
             "type": "library",
             "autoload": {
                 "files": [
-                    "lib/constants.php"
+                    "lib/functions.php"
                 ],
                 "psr-4": {
                     "Amp\\Process\\": "lib"
@@ -389,21 +396,85 @@
                     "email": "bobwei9@hotmail.com"
                 },
                 {
-                    "name": "Niklas Keller",
-                    "email": "me@kelunik.com"
-                },
-                {
                     "name": "Aaron Piotrowski",
                     "email": "aaron@trowski.com"
+                },
+                {
+                    "name": "Niklas Keller",
+                    "email": "me@kelunik.com"
                 }
             ],
             "description": "Asynchronous process manager.",
             "homepage": "https://github.com/amphp/process",
             "support": {
                 "issues": "https://github.com/amphp/process/issues",
-                "source": "https://github.com/amphp/process/tree/windows-phar"
+                "source": "https://github.com/amphp/process/tree/v1.1.4"
             },
-            "time": "2018-04-08T18:55:42+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/amphp",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-07-06T23:50:12+00:00"
+        },
+        {
+            "name": "amphp/serialization",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amphp/serialization.git",
+                "reference": "693e77b2fb0b266c3c7d622317f881de44ae94a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amphp/serialization/zipball/693e77b2fb0b266c3c7d622317f881de44ae94a1",
+                "reference": "693e77b2fb0b266c3c7d622317f881de44ae94a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amphp/php-cs-fixer-config": "dev-master",
+                "phpunit/phpunit": "^9 || ^8 || ^7"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Amp\\Serialization\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Piotrowski",
+                    "email": "aaron@trowski.com"
+                },
+                {
+                    "name": "Niklas Keller",
+                    "email": "me@kelunik.com"
+                }
+            ],
+            "description": "Serialization tools for IPC and data storage in PHP.",
+            "homepage": "https://github.com/amphp/serialization",
+            "keywords": [
+                "async",
+                "asynchronous",
+                "serialization",
+                "serialize"
+            ],
+            "support": {
+                "issues": "https://github.com/amphp/serialization/issues",
+                "source": "https://github.com/amphp/serialization/tree/master"
+            },
+            "time": "2020-03-25T21:39:07+00:00"
         },
         {
             "name": "amphp/sync",

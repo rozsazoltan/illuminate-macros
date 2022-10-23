@@ -1,0 +1,21 @@
+# Az inaktivitási napok száma, mielőtt a probléma elavulttá válik
+daysUntilStale: 90
+# Az elévült probléma lezárása előtt eltöltött inaktivitási napok száma
+daysUntilClose: 720
+# Az ezekkel a címkékkel kapcsolatos problémák soha nem tekinthetők elavultnak
+exemptLabels:
+  - kiemelt
+  - biztonsági rés
+  - hiba
+# A probléma elavultként való megjelölésekor használható címke
+staleLabel: régi
+# Megjegyzés a közzétételhez, ha egy problémát elavultként jelöl meg. A letiltáshoz állítsa „hamis” értékre
+markComment: >
+  ### Datarose Production
+  
+  3 hónapja nincs tevékenység a problémával kapcsolatban, így a rendszer automatikusan elavultként jelölte meg.
+# Egy elavult probléma lezárásakor írjon megjegyzést. A letiltáshoz állítsa „hamis” értékre
+closeComment: >
+  ### Datarose Production
+  
+  Kettő éve nincs tevékenység a problémával kapcsolatban, így a rendszer automatikusan lezárta.

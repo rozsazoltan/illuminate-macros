@@ -1,0 +1,34 @@
+name: PHP testing
+
+on:
+  push:
+    branches: [ dev-master ]
+  pull_request:
+    branches: [ dev-master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        php:
+          - "8.0"
+          - "8.1"
+        dependencies:
+          - "highest"
+        include:
+          - php-version: "8.2"
+            composer-options: "--no-scripts --no-dev"
+
+    steps:
+      - uses: "actions/checkout@v3"
+      - name: "Use Composer v2"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          php-version: "${{ matrix.php }}"
+      - uses: "ramsey/composer-install@v2"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "${{ matrix.composer-options }}"

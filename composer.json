@@ -1,5 +1,5 @@
 {
-  "name": "datarose/laravel-macros",
+  "name": "datarose/illuminate-macros",
   "description": "Set of useful Laravel macros",
   "keywords": [
     "datarose",
@@ -21,12 +21,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Datarose\\LaravelMacros\\": "src/"
+      "Datarose\\": "src/Illuminate/Foundation",
+      "IlluminateMacro\\": "src/Illuminate/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Datarose\\LaravelMacros\\Test\\": "tests/"
+      "IlluminateMacro\\Test\\": "tests/"
     }
   },
   "config": {
@@ -35,7 +36,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Datarose\\LaravelMacros\\LaravelMacroServiceProvider"
+        "Datarose\\IlluminateMacroServiceProvider"
       ]
     }
   },

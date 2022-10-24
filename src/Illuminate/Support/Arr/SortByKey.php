@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Arr;
+namespace IlluminateMacro\Support\Arr;
 
 /**
  * Sort elements of array by key (or column)

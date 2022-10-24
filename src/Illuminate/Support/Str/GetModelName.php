@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Str;
+namespace IlluminateMacro\Support\Str;
 
 /**
  * Get Model by name with path.

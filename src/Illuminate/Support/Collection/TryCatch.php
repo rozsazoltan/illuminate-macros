@@ -1,8 +1,8 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Collection;
+namespace IlluminateMacro\Support\Collection;
 
-use Datarose\LaravelMacros\Illuminate\Support\Collection\Helpers\CatchableCollectionProxy;
+use IlluminateMacro\Support\Collection\Helpers\CatchableCollectionProxy;
 
 class TryCatch
 {

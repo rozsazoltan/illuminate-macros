@@ -1,8 +1,8 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Collection;
+namespace IlluminateMacro\Support\Collection;
 
-use Datarose\LaravelMacros\Illuminate\Support\Collection\Exceptions\CollectionItemNotFound;
+use IlluminateMacro\Support\Collection\Exceptions\CollectionItemNotFound;
 
 /**
  * Get the first item. Throws CollectionItemNotFound if the item was not found.

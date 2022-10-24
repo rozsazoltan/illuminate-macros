@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Exceptions;
+namespace IlluminateMacro\Support\Collection\Exceptions;
 
 use Exception;
 

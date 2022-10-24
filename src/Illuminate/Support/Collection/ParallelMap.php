@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Collection;
+namespace IlluminateMacro\Support\Collection;
 
 use Amp\Parallel\Worker\DefaultPool;
 use Amp\Parallel\Worker\Pool;

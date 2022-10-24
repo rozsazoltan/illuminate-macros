@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Arr;
+namespace IlluminateMacro\Support\Arr;
 
 use \Illuminate\Support\Arr;
 

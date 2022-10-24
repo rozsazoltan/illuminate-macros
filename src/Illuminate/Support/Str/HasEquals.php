@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Str;
+namespace IlluminateMacro\Support\Str;
 
 /**
  * Strings have equals.

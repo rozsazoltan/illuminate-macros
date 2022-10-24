@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Collection;
+namespace IlluminateMacro\Support\Collection;
 
 use Closure;
 use Illuminate\Support\Collection;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\LazyCollection;
+namespace IlluminateMacro\Support\LazyCollection;
 
 use Illuminate\Support\LazyCollection;
 

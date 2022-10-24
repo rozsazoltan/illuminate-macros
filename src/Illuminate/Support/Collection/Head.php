@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Collection;
+namespace IlluminateMacro\Support\Collection;
 
 /**
  * Get the first item from the collection.

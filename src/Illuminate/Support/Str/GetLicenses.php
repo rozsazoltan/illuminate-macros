@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Str;
+namespace IlluminateMacro\Support\Str;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;

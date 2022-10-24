@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Str;
+namespace IlluminateMacro\Support\Str;
 
 /**
  * Convert string to identifier. (from beginning of words)

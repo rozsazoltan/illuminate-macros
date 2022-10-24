@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Routing\Route;
+namespace IlluminateMacro\Routing\Route;
 
 use Illuminate\Support\Str;
 

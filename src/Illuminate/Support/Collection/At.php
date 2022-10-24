@@ -1,6 +1,6 @@
 <?php
 
-namespace Datarose\LaravelMacros\Illuminate\Support\Collection;
+namespace IlluminateMacro\Support\Collection;
 
 /**
  * Get a single item from the collection by index.

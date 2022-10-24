@@ -3,9 +3,10 @@
   "description": "Set of useful Laravel macros",
   "keywords": [
     "datarose",
-    "laravel-macros"
+    "laravel framework",
+    "illuminate-macros"
   ],
-  "homepage": "https://github.com/datarose/laravel-macros",
+  "homepage": "https://github.com/datarose/illuminate-macros",
   "license": "GPL-3.0",
   "authors": [
     {
